@@ -11,11 +11,9 @@ class Home extends Component {
     const { visible } = this.state
     return (
       <div className="background">
-        <Container style={{float: "right"}}>
-          <Button  onClick={this.toggleVisibility}>Menu</Button>
-        </Container>
-        <Sidebar.Pushable >
+        <Sidebar.Pushable  >
           <Sidebar
+            style={styles.navHeaders}
             as={Menu}
             animation='push'
             width='thin'
@@ -31,7 +29,7 @@ class Home extends Component {
               </Link>
             </Menu.Item>
             <Menu.Item name='about'>
-              <Link to='/about'>
+              <Link  to='/about'>
                 About
               </Link>
             </Menu.Item>
@@ -41,13 +39,14 @@ class Home extends Component {
               </Link>
             </Menu.Item>
             <Menu.Item name='contact'>
-              <Link to='/contact'>
+              <Link  to='/contact'>
                 Contact
               </Link>
             </Menu.Item>
             </Sidebar>
             <Sidebar.Pusher>
             <Segment basic>
+              <Button circular icon="bars" style={{ float: 'right', margin:'10px', color: 'rgb(60, 172, 165)'}} onClick={this.toggleVisibility} />
               <Header as="h1" textAlign="right" style={styles.pageHeaders}>Lindsay's Page</Header>
             </Segment>
            </Sidebar.Pusher>
@@ -63,6 +62,11 @@ const styles = {
     fontSize: '100px',
     marginRight: '20px',
     paddingTop: '10px',
+  },
+  navHeaders: {
+    fontFamily: 'Paprika',
+    fontSize: '20px',
+    backgroundColor: 'rgb(195, 191, 191)'
   }
 }
 

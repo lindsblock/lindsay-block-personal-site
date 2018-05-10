@@ -12,9 +12,8 @@ class About extends Component {
     const { visible } = this.state
     return (
       <div className="background">
-        <Button  onClick={this.toggleVisibility}>View</Button>
         <Sidebar.Pushable >
-          <Sidebar style={{fontFamily:'Paprika', backgroundColor: 'rgb(167, 167, 167)'}}
+          <Sidebar style={styles.navHeaders}
             as={Menu}
             animation='push'
             width='thin'
@@ -47,8 +46,9 @@ class About extends Component {
             </Sidebar>
             <Sidebar.Pusher>
             <Segment basic>
+              <Button circular icon="bars" style={{ float: 'right', margin:'10px', color: 'rgb(60, 172, 165)'}} onClick={this.toggleVisibility} />
               <Header as="h1" textAlign="right" style={styles.pageHeaders}>About</Header>
-              <Container style={{ paddingLeft:'300px', fontSize: '20px', fontFamily: 'buda'}} textAlign="left">
+              <Container style={{ paddingLeft:'20px', fontSize: '20px', fontFamily: 'buda', backgroundColor: 'rgba(250, 250, 250, .6)'}} textAlign="left">
                 <p>Hey I'm Lindsay Block. I was born and raised in Salt Lake City, Utah.</p>
                 <p>I am new to the web development world. I could never figure out what I wanted to do with my life, I was a personal trainer,
                   I worked in a restaurant, I was a receptionist, and I did nails for a short time. I had a shoulder injury which led to surgery and afterward physical therapy and that
@@ -75,6 +75,11 @@ const styles = {
     fontSize: '100px',
     marginRight: '20px',
     paddingTop: '10px',
+  },
+  navHeaders: {
+    fontFamily: 'Paprika',
+    fontSize: '20px',
+    backgroundColor: 'rgb(195, 191, 191)'
   }
 }
 
