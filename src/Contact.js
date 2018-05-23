@@ -49,6 +49,20 @@ class Contact extends Component {
             <Segment basic>
               <Button circular icon="bars" style={{ float: 'right', margin:'10px', color: 'rgb(60, 172, 165)'}} onClick={this.toggleVisibility} />
               <Header as="h1" textAlign="right" style={styles.pageHeaders}>Contact</Header>
+              <Container textAlign="center">
+                <a href="https://www.facebook.com/lindsay.wolthuis">
+                  <Button size="huge" circular color='facebook' icon='facebook' />
+                </a>
+                  <a href="https://www.linkedin.com/in/lindsay-block0805">
+                  <Button size="huge" circular color='linkedin' icon='linkedin' />
+                </a>
+                <a href="https://github.com/lindsblock">
+                  <Button size="huge" circular color="black" icon='github' />
+                </a>
+                <Header>Email Me</Header>
+                <p>lindsay.block05@gmail.com</p>
+
+              </Container>
             </Segment>
            </Sidebar.Pusher>
          </Sidebar.Pushable>
