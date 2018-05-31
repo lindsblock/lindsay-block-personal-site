@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Header, Image, Container, Button, Sidebar, Menu, Segment } from 'semantic-ui-react';
+import { Header, Image, Container, Button, Sidebar, Menu, Segment, Grid } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
 
 
@@ -46,9 +46,20 @@ class About extends Component {
             </Sidebar>
             <Sidebar.Pusher>
             <Segment basic>
-              <Button circular icon="bars" style={{ float: 'right', margin:'10px', color: 'rgb(60, 172, 165)'}} onClick={this.toggleVisibility} />
+              <Button circular icon="bars" style={{ float: 'right', margin:'10px', color: 'rgb(114, 166, 96)'}} onClick={this.toggleVisibility} />
               <Header as="h1" textAlign="right" style={styles.pageHeaders}>About</Header>
-              <Container style={{ paddingLeft:'20px', fontSize: '20px', fontFamily: 'buda', backgroundColor: 'rgba(250, 250, 250, .6)'}} textAlign="left">
+              <Grid container stackable verticalAlign='middle'>
+          <Grid.Row>
+            <Grid.Column  width={6}>
+              <Image
+                bordered
+                rounded
+                size='medium'
+                src='../images/bio.PNG'
+              />
+            </Grid.Column>
+            <Grid.Column width={10}>
+              <Container style={{padding:'10px', fontSize: '20px', fontFamily: 'buda', backgroundColor: 'rgba(250, 250, 250, .6)'}} textAlign="left">
                 <p>Hey I'm Lindsay Block. I was born and raised in Salt Lake City, Utah.</p>
                 <p>I am new to the web development world. I could never figure out what I wanted to do with my life, I was a personal trainer,
                   I worked in a restaurant, I was a receptionist, and I did nails for a short time. I had a shoulder injury which led to surgery and afterward physical therapy and that
@@ -62,6 +73,9 @@ class About extends Component {
                   Jamaica, and the Bahamas. Last year I started making a goal for myself to travel to at least 3 countries per year.
                 </p>
               </Container>
+            </Grid.Column>
+            </Grid.Row>
+          </Grid>
             </Segment>
            </Sidebar.Pusher>
          </Sidebar.Pushable>

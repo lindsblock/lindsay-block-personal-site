@@ -5,6 +5,7 @@ import './index.css';
 import Contact from './Contact';
 import About from './About';
 import Projects from './Projects';
+import Footer from './Footer';
 
 class App extends Component {
   render() {
@@ -16,6 +17,7 @@ class App extends Component {
             <Route exact path='/projects' component={Projects} />
             <Route exact path='/contact' component={Contact} />
           </Switch>
+          <Footer />
       </div>
     );
   }

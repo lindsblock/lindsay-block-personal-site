@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Header, Image, Container, Sidebar, Icon, Button, Menu, Segment, Card } from 'semantic-ui-react';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+
 
 
 class Projects extends Component {
@@ -47,12 +48,12 @@ class Projects extends Component {
             </Sidebar>
             <Sidebar.Pusher>
             <Segment basic>
-              <Button circular icon="bars" style={{ float: 'right', margin:'10px', color: 'rgb(60, 172, 165)'}} onClick={this.toggleVisibility} />
+              <Button circular icon="bars" style={{ float: 'right', margin:'10px', color: 'rgb(114, 166, 96)'}} onClick={this.toggleVisibility} />
               <Header as="h1" textAlign="right" style={styles.pageHeaders}>Projects</Header>
             </Segment>
             <Card.Group stackable centered itemsPerRow={3} style={{ margin: '10px', fontFamily: 'buda', fontSize: '1.33em'}}>
             <Card centered>
-              <Image src='../images/sassy.JPG' />
+              <Image src='../images/sassy2.JPG' />
               <Card.Content>
                 <Card.Header style={styles.cardHeaders}>
                   Sassy Lash & Esthetics
@@ -74,7 +75,7 @@ class Projects extends Component {
               </Card.Content>
             </Card>
             <Card centered>
-              <Image src='../images/sassy.JPG' />
+              <Image src='../images/canduu.JPG' />
               <Card.Content>
                 <Card.Header style={styles.cardHeaders}>
                   Can Duu
@@ -96,7 +97,7 @@ class Projects extends Component {
               </Card.Content>
             </Card>
           </Card.Group>
-          <Header as="h3" textAlign="center" style={{fontFamily:'Paprika'}}>See my <a href='https://github.com/lindsblock'>Github</a> for more of my work!</Header>
+          <Header as="h3" textAlign="center" style={{fontFamily:'Paprika'}}>See my <a style={{color:'rgb(144, 144, 144)'}}href='https://github.com/lindsblock'>Github</a> for more of my work!</Header>
            </Sidebar.Pusher>
          </Sidebar.Pushable>
       </div>

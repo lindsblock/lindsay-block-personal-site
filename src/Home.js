@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Header, Image, Container, Sidebar, Icon, Button, Menu, Segment } from 'semantic-ui-react';
+import { Header, Image, Container, Sidebar, Icon, Button, Menu, Segment, Grid } from 'semantic-ui-react';
 import { Link } from 'react-router-dom'
 
 class Home extends Component {
@@ -21,33 +21,33 @@ class Home extends Component {
             visible={visible}
             icon='labeled'
             vertical
-            inverted
+
             >
             <Menu.Item name='home'>
-              <Link to="/">
+              <Link style={{color:'rgb(114, 166, 96)'}} to="/">
                 Home
               </Link>
             </Menu.Item>
             <Menu.Item name='about'>
-              <Link  to='/about'>
+              <Link  style={{color:'rgb(114, 166, 96)'}} to='/about'>
                 About
               </Link>
             </Menu.Item>
             <Menu.Item name='projects'>
-              <Link to='/projects'>
+              <Link style={{color:'rgb(114, 166, 96)'}} to='/projects'>
                 Projects
               </Link>
             </Menu.Item>
             <Menu.Item name='contact'>
-              <Link  to='/contact'>
+              <Link  style={{color:'rgb(114, 166, 96)'}} to='/contact'>
                 Contact
               </Link>
             </Menu.Item>
             </Sidebar>
             <Sidebar.Pusher>
             <Segment basic>
-              <Button circular icon="bars" style={{ float: 'right', margin:'10px', color: 'rgb(60, 172, 165)'}} onClick={this.toggleVisibility} />
-              <Header as="h1" textAlign="right" style={styles.pageHeaders}>Lindsay's Page</Header>
+              <Button circular icon="bars" style={{ float: 'right', margin:'10px', color: 'rgb(114, 166, 96)'}} onClick={this.toggleVisibility} />
+              <Image src="../images/logo.png" size="massive" centered style={{marginTop:'100px', marginLeft:'300px'}}/>
             </Segment>
            </Sidebar.Pusher>
          </Sidebar.Pushable>
@@ -66,7 +66,7 @@ const styles = {
   navHeaders: {
     fontFamily: 'Paprika',
     fontSize: '20px',
-    backgroundColor: 'rgb(195, 191, 191)'
+    backgroundColor: 'rgb(246, 245, 245)',
   }
 }
 
