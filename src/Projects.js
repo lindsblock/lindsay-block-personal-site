@@ -26,22 +26,22 @@ class Projects extends Component {
             inverted
             >
             <Menu.Item name='home'>
-              <Link to="/">
+              <Link style={{color:'rgb(114, 166, 96)'}} to="/">
                 Home
               </Link>
             </Menu.Item>
             <Menu.Item name='about'>
-              <Link to='/about'>
+              <Link style={{color:'rgb(114, 166, 96)'}} to='/about'>
                 About
               </Link>
             </Menu.Item>
             <Menu.Item name='projects'>
-              <Link to='/projects'>
+              <Link style={{color:'rgb(114, 166, 96)'}} to='/projects'>
                 Projects
               </Link>
             </Menu.Item>
             <Menu.Item name='contact'>
-              <Link to='/contact'>
+              <Link style={{color:'rgb(114, 166, 96)'}} to='/contact'>
                 Contact
               </Link>
             </Menu.Item>
@@ -97,7 +97,7 @@ class Projects extends Component {
               </Card.Content>
             </Card>
           </Card.Group>
-          <Header as="h3" textAlign="center" style={{fontFamily:'Paprika'}}>See my <a style={{color:'rgb(144, 144, 144)'}}href='https://github.com/lindsblock'>Github</a> for more of my work!</Header>
+          <Header as="h3" textAlign="center" style={{fontFamily:'Marcellus'}}>See my <a style={{color:'rgb(144, 144, 144)'}}href='https://github.com/lindsblock'>Github</a> for more of my work!</Header>
            </Sidebar.Pusher>
          </Sidebar.Pushable>
       </div>
@@ -114,13 +114,13 @@ class Projects extends Component {
   },
 
   navHeaders: {
-    fontFamily: 'Paprika',
+    fontFamily: 'Marcellus',
     fontSize: '20px',
-    backgroundColor: 'rgb(195, 191, 191)'
+    backgroundColor: 'rgb(246, 245, 245)'
   },
 
   cardHeaders: {
-    fontFamily: 'Paprika',
+    fontFamily: 'Marcellus',
     fontSize: '20px',
   }
   }

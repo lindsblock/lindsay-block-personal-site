@@ -25,22 +25,22 @@ class Contact extends Component {
             inverted
             >
             <Menu.Item name='home'>
-              <Link to="/">
+              <Link style={{color:'rgb(114, 166, 96)'}} to="/">
                 Home
               </Link>
             </Menu.Item>
             <Menu.Item name='about'>
-              <Link to='/about'>
+              <Link style={{color:'rgb(114, 166, 96)'}} to='/about'>
                 About
               </Link>
             </Menu.Item>
             <Menu.Item name='projects'>
-              <Link to='/projects'>
+              <Link style={{color:'rgb(114, 166, 96)'}} to='/projects'>
                 Projects
               </Link>
             </Menu.Item>
             <Menu.Item name='contact'>
-              <Link to='/contact'>
+              <Link style={{color:'rgb(114, 166, 96)'}} to='/contact'>
                 Contact
               </Link>
             </Menu.Item>
@@ -60,7 +60,7 @@ class Contact extends Component {
                   <Button size="huge" circular color="black" icon='github' />
                 </a>
                 <Container style={{backgroundColor: 'rgba(250, 250, 250, .6)', margin:'20px', padding:'10px'}}>
-                <Header as="h3" textAlign="center" style={{fontFamily:'Paprika', fontSize:'30px'}} >Email Me</Header>
+                <Header as="h3" textAlign="center" style={{fontFamily:'Marcellus', fontSize:'30px'}} >Email Me</Header>
                 <Header as="h3" textAlign="center" style={{fontFamily:'Buda', fontSize:'30px'}}>lindsay.block05@gmail.com</Header>
                 </Container>
               </Container>
@@ -80,9 +80,9 @@ class Contact extends Component {
     paddingTop: '10px',
   },
   navHeaders: {
-    fontFamily: 'Paprika',
+    fontFamily: 'Marcellus',
     fontSize: '20px',
-    backgroundColor: 'rgb(195, 191, 191)'
+    backgroundColor: 'rgb(246, 245, 245)'
   }
   }
 export default Contact;

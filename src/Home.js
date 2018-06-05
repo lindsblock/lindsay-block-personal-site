@@ -47,8 +47,13 @@ class Home extends Component {
             <Sidebar.Pusher>
             <Segment basic>
               <Button circular icon="bars" style={{ float: 'right', margin:'10px', color: 'rgb(114, 166, 96)'}} onClick={this.toggleVisibility} />
-              <Image src="../images/logo.png" size="massive" centered style={{marginTop:'100px', marginLeft:'300px'}}/>
+              <Image src="../images/logo.png" size="massive" centered style={{marginTop:'80px', marginLeft:'300px'}}/>
             </Segment>
+            <div>
+              <Container fluid>
+              <Image style={{height:'auto, width"100%'}} src="../images/home.jpg"/>
+            </Container>
+            </div>
            </Sidebar.Pusher>
          </Sidebar.Pushable>
       </div>
@@ -64,7 +69,7 @@ const styles = {
     paddingTop: '10px',
   },
   navHeaders: {
-    fontFamily: 'Paprika',
+    fontFamily: 'Marcellus',
     fontSize: '20px',
     backgroundColor: 'rgb(246, 245, 245)',
   }
