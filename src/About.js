@@ -64,8 +64,9 @@ class About extends Component {
                       <p>Hey, I'm Lindsay Block. I was born and raised in Salt Lake City, Utah.</p>
                       <p>I could never figure out what I wanted to when I grew up (and heck I probably still don't know what I want to do when I grow up). I have been a personal trainer,
                         I worked in a restaurant, I was a receptionist, and I did nails for a short time. I liked and disliked each of those things for different reasons, but I wanted to do something I totally loved. One year I had a shoulder injury which led to surgery and afterward physical therapy and that
-                        is when I decided to go to school to be a Physical Therapist Assistant. I graduated from SLCC  with a 3.96 GPA and with my Associate's degree in Physical Therapist Assiting as well as an Associate's in General Education. I worked as a PTA with a hand and upper extremity specialist for the last 2 years. I loved the job, it was very rewarding
-                        being able to help people regain the use of their limbs, but something was missing. It was hard to get time off, it was hard on my own body and hands, and I didn't make great money. I needed a change!
+                        is when I decided to go to school to be a Physical Therapist Assistant. I graduated from SLCC  with a 3.96 GPA and with my Associate's degree in Physical Therapist Assiting as well as an Associate's in General Education. I worked as a PTA with a hand and upper extremity specialist for the
+                        last 2 years. I loved the job, it was very rewarding being able to help people regain the use of their limbs and recover from injuries and surgeries.
+                         There were some negatives though. It was hard to get time off, it was hard on my own body and hands, and I didn't make great money. I just knew I didn't want to do it forever.
                       </p>
                     </Container>
                   </Grid.Column>
@@ -75,11 +76,11 @@ class About extends Component {
                 <Grid.Row style={{marginBottom:'20px'}}>
                   <Grid.Column width={10}>
                     <Container style={{padding:'10px', fontSize: '20px', fontFamily: 'buda', backgroundColor: 'rgba(250, 250, 250, .6)'}} textAlign="left">
-                      <Header as="h2" style={{fontFamily:'Marcellus'}}>Coding Story and Skills</Header>
+                      <Header as="h2" style={{fontFamily:'Marcellus'}}>My Coding Story</Header>
                       <p>I am brand new to the development world. I had heard about coding, but I literally didn't know anything about it
-                        aside from the fact that you build websites and it was hard. So I researched a little bit and thought about doing it for about a year but I never had the time, the funds,
-                        and let's face it, it is terrifying quitting your job and not making any money for a while. Finally in February 2018 I up and quit my full time job as a PTA and I took a bootcamp through DevPoint Labs.
-                        I totally loved it! I found myself excited to go to school every day and I really enjoyed what we were learning. This brings us to now. I am currently working on small projects on my own trying to gain
+                        aside from the fact that you build websites and it was hard. So I researched a little bit and I literally thought about doing it for about a year but I never had the time, the funds,
+                        and I would have to quit my job in order to be able to do it. Finally in February 2018 I did end up quitting my full time job as a PTA and I took a bootcamp through DevPoint Labs.
+                        I totally loved it! I found myself excited to go to school every day and I really enjoyed what we were learning. I finished the bootcamp in April 2018. This brings us to now. I am currently working on small projects on my own trying to gain
                         some practice as I am looking for internships or jobs. I think I have found what makes me happy and something that I will really love. I look forward to becoming a better developer and as I sit here writing my code for this
                         very site I am having a blast.
                       </p>

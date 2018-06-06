@@ -86,7 +86,7 @@ class Projects extends Component {
                   </span>
                 </Card.Meta>
                 <Card.Description>
-                  Portfolio project that I contributed to for school.
+                  Portfolio project that I contributed to for school. Similar to Thumbtack, users can add jobs they need done and hire out providers to complete them. 
                 </Card.Description>
               </Card.Content>
               <Card.Content extra>

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Header, Image, Container, Sidebar, Icon, Button, Menu, Segment, Grid, Divider} from 'semantic-ui-react';
+import { Container, Icon, Button, Menu, Segment, Divider, Header} from 'semantic-ui-react';
 import { Link } from 'react-router-dom'
 
 class Footer extends Component {
@@ -7,9 +7,8 @@ class Footer extends Component {
   render () {
     return (
       <div>
-        <Segment vertical style={{ padding: '2em',backgroundColor: "rgb(246, 245, 245)",  }}>
+        <Segment  vertical style={{ alignItems: "center", padding: '2em', backgroundColor: "rgb(246, 245, 245)"}}>
          <Container textAlign="center">
-           <div>
              <Divider />
              <a href="https://www.facebook.com/lindsay.wolthuis">
                <Button size="huge" circular color='facebook' icon='facebook' />
@@ -20,20 +19,18 @@ class Footer extends Component {
              <a href="https://github.com/lindsblock">
                <Button size="huge" circular color="black" icon='github' />
              </a>
-             <Menu fluid secondary style={{width: '100%'}}>
-              <Link to='/about'>
-                <Menu.Item style={styles.navHeaders} name='services'>About</Menu.Item>
-              </Link>
-              <Link to='/projects'>
-                <Menu.Item style={styles.navHeaders} name='photos'>Projects</Menu.Item>
-              </Link>
-              <Link to='/contact'>
-                <Menu.Item style={styles.navHeaders} name='faq'>Contact</Menu.Item>
-              </Link>
+            <Menu secondary widths={6}>
+                <a  style={{padding:'10px'}} href="/about">
+                <Header style={styles.navHeaders} as="h3">About</Header>
+              </a>
+              <a style={{padding:'10px'}}  href="/projects">
+                <Header style={styles.navHeaders} as="h3">Projects</Header>
+              </a>
+              <a style={{padding:'10px'}}  href="/contact">
+                <Header style={styles.navHeaders} as="h3">Contact</Header>
+              </a>
             </Menu>
-           </div>
          </Container>
-         <Divider />
        </Segment>
       </div>
     )
@@ -50,7 +47,8 @@ const styles = {
   navHeaders: {
     fontFamily: 'Marcellus',
     fontSize: '20px',
-    backgroundColor: 'rgb(246, 245, 245)'
+    backgroundColor: 'rgb(246, 245, 245)',
+    color:'rgb(114, 166, 96)'
   }
 }
 

@@ -59,10 +59,11 @@ class Contact extends Component {
                 <a href="https://github.com/lindsblock">
                   <Button size="huge" circular color="black" icon='github' />
                 </a>
-                <Container style={{backgroundColor: 'rgba(250, 250, 250, .6)', margin:'20px', padding:'10px'}}>
-                <Header as="h3" textAlign="center" style={{fontFamily:'Marcellus', fontSize:'30px'}} >Email Me</Header>
-                <Header as="h3" textAlign="center" style={{fontFamily:'Buda', fontSize:'30px'}}>lindsay.block05@gmail.com</Header>
-                </Container>
+                <br />
+                <br />
+                <Button style={styles.navHeaders}>
+                  <a style={{color:'rgb(114, 166, 96)'}} href="mailto:lindsay.block05@gmail.com?Subject=Hello" target="_top">Email Me</a>
+                </Button>
               </Container>
             </Segment>
            </Sidebar.Pusher>
@@ -73,16 +74,16 @@ class Contact extends Component {
   }
 
   const styles = {
-  pageHeaders: {
-    fontFamily: 'Tangerine',
-    fontSize: '100px',
-    marginRight: '20px',
-    paddingTop: '10px',
-  },
-  navHeaders: {
-    fontFamily: 'Marcellus',
-    fontSize: '20px',
-    backgroundColor: 'rgb(246, 245, 245)'
-  }
+    pageHeaders: {
+      fontFamily: 'Tangerine',
+      fontSize: '100px',
+      marginRight: '20px',
+      paddingTop: '10px',
+    },
+    navHeaders: {
+      fontFamily: 'Marcellus',
+      fontSize: '20px',
+      backgroundColor: 'rgb(246, 245, 245)',
+    }
   }
 export default Contact;
