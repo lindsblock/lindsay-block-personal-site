@@ -9,3 +9,8 @@ body {
   height: 125vh;
   background-position: 'center';
 }
+.slick-initialized .slick-slide {
+         float: inherit;
+         display: inline-block !important;
+         vertical-align: middle;
+  }

@@ -53,14 +53,14 @@ class Projects extends Component {
             </Segment>
             <Card.Group stackable centered itemsPerRow={3} style={{ margin: '10px', fontFamily: 'buda', fontSize: '1.33em'}}>
             <Card centered>
-              <Image src='../images/sassy2.JPG' />
+              <Image src='../images/sassylash.jpg' />
               <Card.Content>
                 <Card.Header style={styles.cardHeaders}>
                   Sassy Lash & Esthetics
                 </Card.Header>
                 <Card.Meta>
                   <span className='date'>
-                    In Progress
+                    Deployed
                   </span>
                 </Card.Meta>
                 <Card.Description>
@@ -68,9 +68,9 @@ class Projects extends Component {
                 </Card.Description>
               </Card.Content>
               <Card.Content extra>
-                <a>
+                <a href="https://www.sassylashesthetics.com">
                   <Icon name='desktop' />
-                  www.sassylash.com
+                  www.sassylashesthetics.com
                 </a>
               </Card.Content>
             </Card>
@@ -86,7 +86,29 @@ class Projects extends Component {
                   </span>
                 </Card.Meta>
                 <Card.Description>
-                  Portfolio project that I contributed to for school. Similar to Thumbtack, users can add jobs they need done and hire out providers to complete them. 
+                  Portfolio project that I contributed to for school.
+                </Card.Description>
+              </Card.Content>
+              <Card.Content extra>
+                <a href='/contact'>
+                  <Icon name='desktop' />
+                  Ask me for details!
+                </a>
+              </Card.Content>
+            </Card>
+            <Card centered>
+              <Image src='../images/greg.jpg' />
+              <Card.Content>
+                <Card.Header style={styles.cardHeaders}>
+                  Greg's Car Tracker
+                </Card.Header>
+                <Card.Meta>
+                  <span className='date'>
+                    In progress
+                  </span>
+                </Card.Meta>
+                <Card.Description>
+                  Project for my boyfriend to keep track of the modifications on his car.
                 </Card.Description>
               </Card.Content>
               <Card.Content extra>
@@ -97,7 +119,7 @@ class Projects extends Component {
               </Card.Content>
             </Card>
           </Card.Group>
-          <Header as="h3" textAlign="center" style={{fontFamily:'Marcellus'}}>See my <a style={{color:'rgb(144, 144, 144)'}}href='https://github.com/lindsblock'>Github</a> for more of my work!</Header>
+          <Header as="h3" textAlign="center" style={{fontFamily:'Marcellus', fontSize: '30px', paddingTop: '50px'}}>See my <a style={{color:'rgb(144, 144, 144)'}}href='https://github.com/lindsblock'>Github</a> for more of my work!</Header>
            </Sidebar.Pusher>
          </Sidebar.Pushable>
       </div>
